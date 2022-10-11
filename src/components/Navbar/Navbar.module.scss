@@ -1,0 +1,18 @@
+.planets { 
+    color: black;
+    margin-right:32px;
+}
+
+.link {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+      margin: 22px 32px;
+    }
+}
