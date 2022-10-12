@@ -1,17 +1,27 @@
 .planets { 
     color: black;
     margin-right:32px;
+    
 }
 
 .link {
     margin: 10px;
     text-decoration: none;
-    color: black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 15px;
+    transition: 0.2s ease-in-out;
+    &:hover {
+        color: rgb(85, 252, 168);
+    }
 }
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
+    border-bottom: 0.3px solid rgba(255, 255, 255, 0.26);
     h1{
       margin: 22px 32px;
     }

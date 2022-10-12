@@ -1,0 +1,15 @@
+.kopcinja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  button {
+    width: 350px;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.63);
+    color: white;
+    background-color: none;
+    margin:5px;
+    background-color: black;
+  }
+}

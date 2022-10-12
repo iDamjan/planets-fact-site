@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import PlanetFact from "./pages/PlanetFact";
+import PlanetFactPage from "./pages/PlanetFactPage";
 import './App.css'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Navigate to="/planet/mercury" />} />
-        <Route path="/planet/:planetFact" element={<PlanetFact />} />
+        <Route path="/planet/:planetName" element={<PlanetFactPage />} />
       </Routes>
     </div>
   );
