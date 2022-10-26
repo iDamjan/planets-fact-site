@@ -1,23 +1,21 @@
-
 import classes from "./PlanetFact.module.scss";
 import Overview from "./PlanetFactContent/Overview";
 import InternalStructure from "./PlanetFactContent/InternalStructure";
 import SurfaceGeology from "./PlanetFactContent/SurfaceGeology";
+import { PlanetsContext } from "../../context/context-api";
+import {useContext} from 'react'
 
-export default function PlanetFactPage(){
+export default function PlanetFactPage() {
 
-  // ne mozam da importnam custom button
-
+  const {overview, internal, surface} = useContext(PlanetsContext)
+  
   return (
-    <div>
-      <Overview />
-      <InternalStructure />
-      <SurfaceGeology /> 
-      <div className={classes.kopcinja}>
-        <button>Overview</button>
-        <button>Internal Structure</button>
-        <button>Surface Geology</button>
-      </div>
+    <div className={classes.container}>
+      {overview && <Overview />}
+      {internal && <InternalStructure />}
+      {surface && <SurfaceGeology />}
+
+      
     </div>
   );
 }

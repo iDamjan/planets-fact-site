@@ -12,3 +12,15 @@
 .mainInfo{ 
 margin-left:100px;
 }
+
+.planetImg {
+position: relative;
+}
+.geologyImg {
+    position: absolute;
+    left: 33%;
+    top: 82%;
+    img{
+        width: 100px;
+    }
+}

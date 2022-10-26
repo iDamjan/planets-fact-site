@@ -1,6 +1,6 @@
 import classes from "./Navbar.module.scss";
 import { Link } from "react-router-dom";
-import PlanetsData from "../../data/planets.json";
+import PlanetsData from "../../data/planets";
 
 export default function Navbar() {
   return (
