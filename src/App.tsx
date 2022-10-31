@@ -8,7 +8,7 @@ function App() {
     <div className="body">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Navigate to="/planet/mercury" />} />
+        <Route path="*" element={<Navigate to="/planet/Mercury" />} />
         <Route path="/planet/:planetName" element={<PlanetFactPage />} />
       </Routes>
     </div>
