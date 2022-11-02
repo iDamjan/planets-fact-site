@@ -26,6 +26,7 @@ const data = [
       internal: "/assets/planet-mercury-internal.svg",
       geology: "/assets/geology-mercury.png",
     },
+    color: "#419EBB"
   },
   {
     name: "Venus",
@@ -53,6 +54,7 @@ const data = [
       internal: "/assets/planet-venus-internal.svg",
       geology: "/assets/geology-venus.png",
     },
+    color: "#EDA249"
   },
   {
     name: "Earth",
@@ -80,6 +82,7 @@ const data = [
       internal: "../../../assets/planet-earth-internal.svg",
       geology: "../../../assets/geology-earth.png",
     },
+    color: "#6D2ED5"
   },
   {
     name: "Mars",
@@ -107,6 +110,7 @@ const data = [
       internal: "../../../assets/planet-mars-internal.svg",
       geology: "../../../assets/geology-mars.png",
     },
+    color: "#D14C32"
   },
   {
     name: "Jupiter",
@@ -135,6 +139,7 @@ const data = [
       internal: "../../../assets/planet-jupiter-internal.svg",
       geology: "../../../assets/geology-jupiter.png",
     },
+    color: "#D83A34"
   },
   {
     name: "Saturn",
@@ -162,6 +167,7 @@ const data = [
       internal: "../../../assets/planet-saturn-internal.svg",
       geology: "../../../assets/geology-saturn.png",
     },
+    color: "#CD5120"
   },
   {
     name: "Uranus",
@@ -189,6 +195,7 @@ const data = [
       internal: "../../../assets/planet-uranus-internal.svg",
       geology: "../../../assets/geology-uranus.png",
     },
+    color: "#1EC1A2"
   },
   {
     name: "Neptune",
@@ -216,6 +223,7 @@ const data = [
       internal: "../../../assets/planet-neptune-internal.svg",
       geology: "../../../assets/geology-neptune.png",
     },
+    color: "#2D68F0"
   },
 ];
 

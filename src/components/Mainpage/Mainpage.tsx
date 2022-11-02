@@ -9,11 +9,21 @@ type Planet = {
   image: string;
   content: string;
 };
+// type ActiveButton = {
+//   activeButton: any;
+//   setActiveButton: () => void;
+// }
 
 export default function PlanetFactPage() {
   const { planetName } = useParams();
   const planet = planetsData.find((planet) => planet.name === planetName);
   const [planetDetails, setPlanetDetails] = useState<Planet | undefined>();
+  const [activeButton, setActiveButton] = useState("");
+  const [color, setColor] = useState<string>("");
+
+  const colorChangeHandler = (e: any) => {
+    setActiveButton(e.target.innerHTML.toString());
+  };
 
   useEffect(() => {
     if (!planet) return;
@@ -23,6 +33,8 @@ export default function PlanetFactPage() {
       image: planet.images.planet,
       content: planet.overview.content,
     });
+
+    setColor(planet.color);
   }, [planet]);
 
   const changeContent = (details: Planet) => {
@@ -62,42 +74,56 @@ export default function PlanetFactPage() {
 
           <div className={classes.buttons}>
             <button
-              onClick={() =>
+              style={{
+                backgroundColor: activeButton === "Overview" ? color : "",
+              }}
+              onClick={(e) => {
+                colorChangeHandler(e);
                 changeContent({
                   name: planet.name,
                   image: planet.images.planet,
                   content: planet.overview.content,
-                })
-              }
+                });
+              }}
             >
               Overview
             </button>
             <button
-              onClick={() =>
+              style={{
+                backgroundColor:
+                  activeButton === "Internal Structure" ? color : "",
+              }}
+              onClick={(e) => {
+                colorChangeHandler(e);
                 changeContent({
                   name: planet.name,
                   image: planet.images.internal,
                   content: planet.structure.content,
-                })
-              }
+                });
+              }}
             >
               Internal Structure
             </button>
             <button
-              onClick={() =>
+              style={{
+                backgroundColor:
+                  activeButton === "Surface Geology" ? color : "",
+              }}
+              onClick={(e) => {
+                colorChangeHandler(e);
                 changeContent({
                   name: planet.name,
                   image: planet.images.geology,
                   content: planet.geology.content,
-                })
-              }
+                });
+              }}
             >
               Surface Geology
             </button>
           </div>
         </div>
       </div>
-      <PlanetStats/>
+      <PlanetStats />
     </div>
   );
 }

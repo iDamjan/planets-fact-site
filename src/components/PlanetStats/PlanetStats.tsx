@@ -8,7 +8,7 @@ export default function PlanetStats() {
 
   const {planetName} = useParams();
   const planet = planetsData.find((planet) => planet.name === planetName);
-  console.log(planet?.revolution)
+  
 
   if (!planet) return <></>;
 
