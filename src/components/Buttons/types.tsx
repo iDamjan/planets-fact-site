@@ -23,3 +23,16 @@ export type planetTypes = {
     },
     color: string
 }
+
+export type Props = {
+  activeButton: string;
+  changeContent: (planetDetails: {
+    name: string;
+    content: string;
+    image: string;
+    source: string;
+  }) => void;
+  planet: planetTypes;
+  colorChangeHandler: (e: any) => void;
+  color: string;
+};

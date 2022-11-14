@@ -6,3 +6,11 @@
     margin: 50px 100px;
     width: 1250px;
 }
+
+@media (max-width:30em){
+.container{
+    flex-direction: column;
+    width: 100%;
+    
+}
+}

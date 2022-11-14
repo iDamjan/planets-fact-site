@@ -1,4 +1,3 @@
-import React from "react";
 import PlanetStat from "./PlanetStat";
 import classes from './PlanetStats.module.scss'
 import planetsData from "../../data/planets";

@@ -1,8 +1,8 @@
-import classes from "./Buttons.module.scss";
-import { Props } from "./types";
+import React from 'react'
+import classes from './MobileButtons.module.scss'
+import { Props } from "../types";
 
-
-export default function Buttons({
+export default function MobileButtons({
   activeButton,
   colorChangeHandler,
   changeContent,
@@ -32,8 +32,8 @@ export default function Buttons({
       </button>
       <button
         style={{
-          backgroundColor: activeButton === "Internal Structure" ? color : "",
-          border: activeButton === "Internal Structure" ? "none" : "",
+          backgroundColor: activeButton === "Structure" ? color : "",
+          border: activeButton === "Structure" ? "none" : "",
         }}
         onClick={(e) => {
           colorChangeHandler(e);
@@ -45,12 +45,12 @@ export default function Buttons({
           });
         }}
       >
-        Internal Structure
+      Structure
       </button>
       <button
         style={{
-          backgroundColor: activeButton === "Surface Geology" ? color : "",
-          border: activeButton === "Surface Geology" ? "none" : "",
+          backgroundColor: activeButton === "Geology" ? color : "",
+          border: activeButton === "Geology" ? "none" : "",
         }}
         onClick={(e) => {
           colorChangeHandler(e);
@@ -62,7 +62,7 @@ export default function Buttons({
           });
         }}
       >
-        Surface Geology
+        Geology
       </button>
     </div>
   );

@@ -1,5 +1,5 @@
-import React from 'react'
 import classes from './PlanetStat.module.scss'
+
 type statsType = {
     stat:string
     statName:string

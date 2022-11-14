@@ -1,21 +1,29 @@
 html {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-   
+body {
+  margin: 0;
+  padding: 0;
+ 
 }
 
 .body {
-    font-family: 'Antonio', sans-serif;
-    background-image: url('./background-stars.svg');
-    background-color: #070724;
-    background-size:cover;
-    background-repeat: no-repeat;
-   
+  font-family: "Antonio", sans-serif;
+  background-image: url("./background-stars.svg");
+  background-color: #070724;
+  background-size: cover;
+  background-repeat: no-repeat;
 
+}
+@media (max-width:30em){
+    .body{
+        background-repeat: repeat;
+        background-position: center;
+        background-size: contain;
+        position: relative;
+    
+    }
 }

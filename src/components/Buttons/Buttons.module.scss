@@ -1,22 +1,29 @@
 .buttons {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    flex-direction: column;
-    button {
-        width: 350px;
-        height: 48px;
-        border: 1px solid rgba(255, 255, 255, 0.63);
-        color: white;
-        background-color: transparent;
-        margin:8px;
-        margin-left: 0;
-        &:hover{
-            cursor: pointer;
-        }
-        &:active{
-            background-color: rgba(255, 255, 255, 0.63);
-            color: white;
-        }
+  flex-direction: column;
+  button {
+    width: 350px;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.63);
+    color: white;
+    background-color: transparent;
+    margin: 8px;
+    margin-left: 0;
+    &:hover {
+      cursor: pointer;
+      background-color: #838391;
     }
+    &:active {
+      background-color: rgba(255, 255, 255, 0.63);
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 30em) {
+  .buttons {
+    display: none;
+  }
 }
