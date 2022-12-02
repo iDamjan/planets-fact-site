@@ -4,10 +4,12 @@
     flex-direction: row; 
     align-items: center;
     margin: 50px 100px;
-    width: 1250px;
+    width: 100%;
+    max-width: 1250px;
+    
 }
 
-@media (max-width:30em){
+@media (max-width:50em){
 .container{
     flex-direction: column;
     width: 100%;

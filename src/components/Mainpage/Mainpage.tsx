@@ -53,9 +53,9 @@ export default function PlanetFactPage() {
 
     return (
       <div className={classes.planetImg}>
-        <img src={planet.images.planet} alt={planetDetails.name} />
+        <img src={process.env.PUBLIC_URL + planet.images.planet} alt={planetDetails.name} />
         <div className={classes.geologyImg}>
-          <img src={planetDetails.image} alt={planetDetails.name} />
+          <img src={process.env.PUBLIC_URL + planetDetails.image} alt={planetDetails.name} />
         </div>
       </div>
     );

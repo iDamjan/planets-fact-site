@@ -68,7 +68,7 @@
 
 // MOBILE STYLES
 
-@media (max-width: 30em) {
+@media (max-width: 40em) {
   .container {
     flex-direction: column;
     width: 100%;
@@ -78,7 +78,7 @@
     
     img{
       max-width: 175px;
-      width: 80%;
+      
     }
     
   }
@@ -86,7 +86,7 @@
     padding: 40px;
     justify-content: flex-start;
     padding-top: 0;
-
+    height: auto;
   }
   .mainInfo {
     margin-left: 0;
